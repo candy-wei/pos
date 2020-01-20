@@ -1,14 +1,21 @@
-<!DOCTYPE html>
+<%--
+  Created by IntelliJ IDEA.
+  User: littleFlower
+  Date: 2020/1/16
+  Time: 11:01
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <title>会员首页</title>
-    <link rel="stylesheet" type="text/css" href="../../../css/foxui.min.css?v=0.2">
-    <link rel="stylesheet" type="text/css" href="../../../css/style.css?v=3.0.0">
-    <link rel="stylesheet" type="text/css" href="../../../css/iconfont.css?v=2017070719">
-    <link rel="stylesheet" type="text/css" href="../../../css/index.css?v=2017070719">
+    <title>用户首页</title>
+
+    <jsp:include page="base.jsp"/>
+
+    <link rel="stylesheet" type="text/css" href="${path}/css/foxui.min.css?${version}">
+    <link rel="stylesheet" type="text/css" href="${path}/css/style.css?${version}">
+    <link rel="stylesheet" type="text/css" href="${path}/css/iconfont.css?${version}">
+    <link rel="stylesheet" type="text/css" href="${path}/css/index.css?${version}">
 </head>
 <body>
 <div class="fui-page-group">
@@ -253,5 +260,6 @@
 
     <span style="display:none"></span>
 </div>
+
 </body>
 </html>
