@@ -16,10 +16,17 @@
     <link rel="stylesheet" type="text/css" href="${path}/css/style.css?${version}">
     <link rel="stylesheet" type="text/css" href="${path}/css/iconfont.css?${version}">
     <link rel="stylesheet" type="text/css" href="${path}/css/index.css?${version}">
+    <style>
+        .member-page .headinfo .rule-specifically {
+            position: absolute;
+            top: 0.2rem;
+            right: 0.5rem;
+        }
+    </style>
 </head>
 <body>
 <div class="fui-page-group">
-    <div class="fui-page fui-page-current" id="fui-page-1578990810185">
+    <div class="fui-page fui-page-current" id="fuiPage">
         <div class="fui-header">
             <div class="fui-header-left">
                 <a class="back" onclick="location.back()"></a>
@@ -29,12 +36,12 @@
         </div>
 
         <div class="fui-content member-page navbar">
-            <div style="overflow: hidden;height: 7.5rem;position: relative;background: #fff">
+            <div style="overflow: hidden;height: 150px;position: relative;background: #fff">
                 <div class="headinfo" style="z-index:100;border-radius: 50%;">
-                    <a class="setbtn float-wright"
-                       href="#"
-                       data-nocache="true"><i class="icon icon-shezhi"></i></a>
-                    <div class="child" style="margin-left: 0.94rem">
+                    <div class="child rule-specifically">
+                        <a href="#"><div class="btn">规则说明</div></a>
+                    </div>
+                    <div class="child" style="margin-left: 15px">
                         <div class="title">剩余红包数量 <span class="num">0</span> 个</div>
                     </div>
                     <div class="child userinfo">
@@ -52,7 +59,7 @@
 
                         </div>
                     </div>
-                    <div class="child" style="margin-right: 0.94rem">
+                    <div class="child" style="margin-right: 15px">
                         <div class="title">今日可领红包数 <span class="num">0</span> 个</div>
                     </div>
                 </div>
@@ -63,70 +70,45 @@
                 <a class="fui-cell">
                     <div class="fui-cell-text" style="width:100%;height:40px;">
                         <div style="width:100%;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">总收益</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
+                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">已领红包数：<span class="num">3</span> 个</div>
+                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">总金额：<span class="num">30.00</span> 元</div>
                         </div>
 
                     </div>
                 </a>
-                <a class="fui-cell">
-                    <div class="fui-cell-icon"><!--<i class="icon icon-xiaofei"></i>--></div>
-                    <div class="fui-cell-text" style="width:100%;height:40px;">
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">直推奖励</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
-                        </div>
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">团队奖励</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
-                        </div>
-                    </div>
+                <a class="fui-cell external"
+                   href="#">
+                    <div class="fui-cell-icon"><i class="icon icon-star"></i></div>
+                    <div class="fui-cell-text">我的任务</div>
+                    <div class="fui-cell-remark" style="font-size: 10px;">查看全部任务</div>
                 </a>
                 <a class="fui-cell">
                     <div class="fui-cell-icon"><!--<i class="icon icon-xiaofei"></i>--></div>
                     <div class="fui-cell-text" style="width:100%;height:40px;">
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">待入账奖励</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
-                        </div>
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">冻结金额</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
-                        </div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">直推任务</div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
                     </div>
                 </a>
 
                 <a class="fui-cell">
                     <div class="fui-cell-icon"><!--<i class="icon icon-xiaofei"></i>--></div>
                     <div class="fui-cell-text" style="width:100%;height:40px;">
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">A区人数</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0</div>
-                        </div>
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">B区人数</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0</div>
-                        </div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">团队任务</div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
                     </div>
                 </a>
 
                 <a class="fui-cell">
                     <div class="fui-cell-icon"><!--<i class="icon icon-xiaofei"></i>--></div>
                     <div class="fui-cell-text" style="width:100%;height:40px;">
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">直推合伙人总人数</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0</div>
-                        </div>
-                        <div style="width:150px;height:100%;float:left;">
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">团队合伙人总人数</div>
-                            <div style="width:100%;height:20px;line-height:20px;text-align:center;">0</div>
-                        </div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">线下任务</div>
+                        <div style="width:100%;height:20px;line-height:20px;text-align:center;">0.00</div>
                     </div>
                 </a>
 
                 <a class="fui-cell" href="#">
                     <div class="fui-cell-icon"><i class="icon icon-heilongjiangtubiao11"></i></div>
-                    <div class="fui-cell-text"><p>我的团队</p></div>
+                    <div class="fui-cell-text"><p>我的直推</p></div>
                     <div class="fui-cell-remark"></div>
                 </a>
             </div>
@@ -136,7 +118,7 @@
                    href="#">
                     <div class="fui-cell-icon"><i class="icon icon-dingdan1"></i></div>
                     <div class="fui-cell-text">我的订单</div>
-                    <div class="fui-cell-remark" style="font-size: 0.65rem;">查看全部订单</div>
+                    <div class="fui-cell-remark" style="font-size: 10px;">查看全部订单</div>
                 </a>
                 <div class="fui-icon-group selecter col-4">
                     <a class="fui-icon-col external"
@@ -163,7 +145,7 @@
             </div>
             <div class="fui-cell-group fui-cell-click external">
                 <a class="fui-cell"
-                   href="./index.php?i=1&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile&amp;r=member.bind">
+                   href="#">
                     <div class="fui-cell-text">
                         <i class="icon icon-shouji" style="color: #666;"></i>
                         绑定手机号
@@ -193,29 +175,6 @@
                         余额明细 </p></div>
                     <div class="fui-cell-remark"></div>
                 </a>
-                <a class="fui-cell" href="#">
-                    <div class="fui-cell-icon"><i class="icon icon-xiaofei"></i></div>
-                    <div class="fui-cell-text"><p>佣金奖励记录</p></div>
-                    <div class="fui-cell-remark"></div>
-                </a>
-                <a class="fui-cell" href="#">
-                    <div class="fui-cell-icon"><i class="icon icon-xiaofei"></i></div>
-                    <div class="fui-cell-text"><p>报单</p></div>
-                    <div class="fui-cell-remark"></div>
-                </a>
-
-                <a class="fui-cell" href="#">
-                    <div class="fui-cell-icon"><i class="icon icon-tixian"></i></div>
-                    <div class="fui-cell-text"><p>佣金提现：我的佣金￥0.00</p></div>
-                    <div class="fui-cell-remark"></div>
-                </a>
-
-                <a class="fui-cell" href="#">
-                    <div class="fui-cell-icon"><i class="icon icon-xiaofei"></i></div>
-                    <div class="fui-cell-text"><p>佣金提现记录 </p></div>
-                    <div class="fui-cell-remark"></div>
-                </a>
-
             </div>
             <div class="fui-cell-group fui-cell-click">
                 <a class="fui-cell" href="#">
@@ -251,13 +210,6 @@
             </div>
         </div>
     </div>
-
-    <!--<a class="diy-layer external"
-       style="width: 35px; position: fixed; display: block; overflow: hidden; z-index: 999; top: 175px; left: 0px; text-align: left;"
-       href="http://wpa.qq.com/msgrd?v=3&amp;uin=3299511486&amp;site=qq&amp;menu=yes"><img
-            src="http://www.shzh-business.com/addons/ewei_shopv2/plugin/diypage/static/images/chat.png"
-            style="height: auto; width: 100%; display: block;"></a>-->
-
     <span style="display:none"></span>
 </div>
 

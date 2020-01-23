@@ -1821,12 +1821,11 @@ a {
     height: 1rem;
     padding: 0;
     margin: 0.2rem auto 0;
-    color: #fff;
+    color: #fef31f;
     font-size: 0.6rem;
     line-height: 0.9rem;
     text-align: center;
-    border-radius: 1rem;
-    border: 1px solid #fff;
+    border: 0;
 }
 
 .member-page .headinfo.style-2 {
